@@ -1,0 +1,14 @@
+text = """
+This is a very large webpage.
+The course fee information is:
+CS101 = Rs. 12000
+AI202 = Rs. 18000
+DS303 = Rs. 15000
+Merit scholarship = 10% reduction
+Hostel lab charges = Rs. 4500
+""" * 5000
+
+with open("big.html", "w", encoding="utf-8") as f:
+    f.write("<html><body>" + text + "</body></html>")
+
+print("big.html created")
